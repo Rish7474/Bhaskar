@@ -58,10 +58,14 @@ public class gameCode extends JPanel implements MouseListener, KeyListener, Acti
       }
    }
    
-   public void right()
+ public void right()
    {
       for(Obstacle obj: obs)
+      {
          obj.update();
+         if(obj.getX() < 0)
+            obs.remove(obj);
+      }
    }
    
    public void generateObs()
