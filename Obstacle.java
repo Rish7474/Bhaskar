@@ -30,9 +30,12 @@ public class Obstacle
    public void update(){obPos-=5;}
    
    public int getX(){
-      return obPos;}
+      return obPos;
+      }
    public int getY(){
-      return obY;}
+      return obY;
+      }
    public int getWidth(){
-      return obWidth;}
+      return obWidth;
+      }
 }

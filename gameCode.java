@@ -58,7 +58,7 @@ public class gameCode extends JPanel implements MouseListener, KeyListener, Acti
       }
    }
    
- public void right()
+   public void right()
    {
       for(Obstacle obj: obs)
       {
@@ -144,6 +144,10 @@ public class gameCode extends JPanel implements MouseListener, KeyListener, Acti
    {
       int keyCode = e.getKeyCode();
       keysDown[keyCode] = true;
+      if(keyCode ==  KeyEvent.VK_SPACE)
+      {
+         flip();
+      }
    }
    
    @Override
